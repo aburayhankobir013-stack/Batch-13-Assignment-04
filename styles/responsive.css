@@ -1,0 +1,24 @@
+@media screen and (max-width: 576px) {
+  .heading {
+    text-align: center;
+  }
+  .counter-card-container {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+  .navigator-container {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .navigator-container-heading {
+    text-align: center;
+  }
+  .navigator-container-left-part {
+    width: 100%;
+  }
+  #all-btn,
+  #interview-btn,
+  #rejected-btn {
+    flex: 1;
+  }
+}

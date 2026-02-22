@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JOB-APPLICATION-TRACKER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h1 class="heading">Job Application Tracker</h1>
+      <div class="counter-card-container">
+        <div class="counter-card">
+          <span class="text-content">Total</span>
+          <span id="total-count">8</span>
+        </div>
+        <div class="counter-card">
+          <span class="text-content">Interview</span>
+          <span id="interview-count">0</span>
+        </div>
+        <div class="counter-card">
+          <span class="text-content">Rejected</span>
+          <span id="rejected-count">0</span>
+        </div>
+      </div>
+      <div class="navigator-container">
+        <div class="navigator-container-left-part">
+          <h2 class="navigator-container-heading">Available Jobs</h2>
+          <div class="navigator-btns-container">
+            <button id="all-btn">All</button>
+            <button id="interview-btn">Interview</button>
+            <button id="rejected-btn">Rejected</button>
+          </div>
+        </div>
+        <p class="navigator-container-right-part"><span>8</span> of <span>8</span></p>
+      </div>
+      <div class="card-container">
+        <div class="all-card-container all-card-container-active">
+          <!-- JAVASCRIPT WILL PUSH THE DATA -->
+          <div class="card">
+            <h1 class="companyName">Mobile First Corp</h1>
+            <p class="position">React Native Developer</p>
+            <ul class="list-container">
+              <li class="location">Remote</li>
+              <li class="type">Full-time</li>
+              <li class="salary">$130,000 - $175,000</li>
+            </ul>
+            <div class="not-applied-notifier">NOT APPLIED</div>
+            <div class="interview-notifier">INTERVIEW</div>
+            <div class="rejected-notifier">REJECTED</div>
+            <p class="description">
+              Build cross-platform mobile applications using React Native. Work
+              on products used by millions of users worldwide.
+            </p>
+            <div class="btns">
+              <button id="interviewBtn" data-status="pending">INTERVIEW</button>
+              <button id="rejectedBtn" data-status="pending">REJECTED</button>
+            </div>
+            <button id="deleteBtn">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </div>
+        </div>
+        <div class="interview-card-container interview-card-container-inactive">
+          <!-- JAVASCRIPT WILL PUSH THE DATA -->
+        </div>
+        <div class="rejected-card-container rejected-card-container-inactive">
+          <!-- JAVASCRIPT WILL PUSH THE DATA -->
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
