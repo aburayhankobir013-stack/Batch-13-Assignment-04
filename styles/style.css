@@ -94,13 +94,14 @@ body {
   border-radius: 2.5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
+#all-btn{
+  background-color: blue;
+  color: white;
+}
 .all-card-container{
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
-.all-card-container-active{
-  display: flex;
 }
 .all-card-container-inactive{
   display: none;
@@ -110,9 +111,6 @@ body {
   flex-direction: column;
   gap: 1rem;
 }
-.interview-card-container-active{
-  display: flex;
-}
 .interview-card-container-inactive{
   display: none;
 }
@@ -120,9 +118,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
-.rejected-card-container-active{
-  display: flex;
 }
 .rejected-card-container-inactive{
   display: none;
@@ -175,6 +170,12 @@ body {
   background-color: #bbbeb4;
   border-radius: 5px;
 }
+.not-applied-notifier-inactive{
+  display: none;
+}
+.not-applied-notifier-active{
+  display: block;
+}
 .interview-notifier {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   font-size: 1.5rem;
@@ -183,7 +184,12 @@ body {
   padding: 0.5rem;
   background-color: #bbbeb4;
   border-radius: 5px;
+}
+.interview-notifier-inactive{
   display: none;
+}
+.interview-notifier-active{
+  display: block;
 }
 .rejected-notifier {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
@@ -193,7 +199,12 @@ body {
   padding: 0.5rem;
   background-color: #bbbeb4;
   border-radius: 5px;
+}
+.rejected-notifier-inactive{
   display: none;
+}
+.rejected-notifier-active{
+  display: block;
 }
 .description {
   font-size: 1.2rem;
@@ -228,3 +239,30 @@ body {
   border: 2px solid red;
   cursor: pointer;
 }
+.empty-card-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+figure{
+  width: 7.5rem;
+}
+img{
+  width: 100%;
+}
+
+.empty-card-heading{
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+.empty-card-paragraph{
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+

@@ -14,7 +14,7 @@
       <div class="counter-card-container">
         <div class="counter-card">
           <span class="text-content">Total</span>
-          <span id="total-count">8</span>
+          <span id="total-count"></span>
         </div>
         <div class="counter-card">
           <span class="text-content">Interview</span>
@@ -33,13 +33,14 @@
             <button id="interview-btn">Interview</button>
             <button id="rejected-btn">Rejected</button>
           </div>
+          
         </div>
-        <p class="navigator-container-right-part"><span>8</span> of <span>8</span></p>
+        <p class="navigator-container-right-part"><span id="staying-counter-list"></span> of <span id="total-counter-list"></span></p>
       </div>
       <div class="card-container">
-        <div class="all-card-container all-card-container-active">
+        <div id="all-card-container" class="all-card-container all-card-container-active">
           <!-- JAVASCRIPT WILL PUSH THE DATA -->
-          <div class="card">
+          <!-- <div class="card">
             <h1 class="companyName">Mobile First Corp</h1>
             <p class="position">React Native Developer</p>
             <ul class="list-container">
@@ -61,12 +62,12 @@
             <button id="deleteBtn">
               <i class="fa-solid fa-trash"></i>
             </button>
-          </div>
+          </div> -->
         </div>
-        <div class="interview-card-container interview-card-container-inactive">
+        <div id="interview-card-container" class="interview-card-container interview-card-container-inactive">
           <!-- JAVASCRIPT WILL PUSH THE DATA -->
         </div>
-        <div class="rejected-card-container rejected-card-container-inactive">
+        <div id="rejected-card-container" class="rejected-card-container rejected-card-container-inactive">
           <!-- JAVASCRIPT WILL PUSH THE DATA -->
         </div>
       </div>
